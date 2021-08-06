@@ -22,7 +22,7 @@ function IdTsx({ coin }: CoinProps) {
       <Layout>
         <div className={styles.coin_page}>
           <div className={styles.coin_container}>
-          <Image src={coin.image.large} alt={coin.name}    layout="responsive" width={30} height={30}/>
+          <Image src={coin.image.large} alt={coin.name}  width={30} height={30}}/>
 
             <h1 className={styles.coin_name}>{coin.name}</h1>
             <p className={styles.coin_sticker}>{coin.symbol}</p>
