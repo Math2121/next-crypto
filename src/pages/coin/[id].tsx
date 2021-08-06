@@ -1,4 +1,5 @@
 import { GetServerSideProps } from "next";
+import Image from "next/image";
 import Layout from "../../components/Layout";
 import styles from "./Coin.module.scss";
 interface CoinProps {
@@ -21,7 +22,7 @@ function IdTsx({ coin }: CoinProps) {
       <Layout>
         <div className={styles.coin_page}>
           <div className={styles.coin_container}>
-            <img src={coin.image.large} alt={coin.name} />
+          <Image src={coin.image.large} alt={coin.name}    layout="responsive" width={30} height={30}/>
 
             <h1 className={styles.coin_name}>{coin.name}</h1>
             <p className={styles.coin_sticker}>{coin.symbol}</p>
