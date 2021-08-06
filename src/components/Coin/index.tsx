@@ -29,7 +29,7 @@ function Coin({
           <div className={style.coin_container}>
             <div className={style.coin_row}>
               <div className={style.coin}>
-                <img src={image} alt={name} className={style.coin_img} />
+                 <Image src={image} alt={name} className={style.coin_img}   layout="responsive" width={30} height={30}/>
                 <h1 className={style.coin_h1}>{name}</h1>
                 <p className={style.coin_symbol}>{symbol}</p>
               </div>
